@@ -203,7 +203,7 @@ var SortableListView = React.createClass({
       }
       if (newScrollValue !== null) {
         this.scrollValue = newScrollValue;
-         this.scrollResponder.scrollWithoutAnimationTo(this.scrollValue, 0);
+         this.scrollResponder.scrollTo(this.scrollValue);
       }
       this.checkTargetElement();
       this.requestAnimationFrame(this.scrollAnimation);
