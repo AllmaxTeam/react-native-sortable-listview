@@ -188,7 +188,7 @@ var SortableListView = React.createClass({
       let MAX_SCROLL_VALUE = this.scrollContainerHeight - HEIGHT + (this.state.active.layout.frameHeight * 2);
       let currentScrollValue = this.scrollValue;
       let newScrollValue = null;
-      let SCROLL_MAX_CHANGE = 20;
+      let SCROLL_MAX_CHANGE = 60;
 
       if (moveY < SCROLL_LOWER_BOUND && currentScrollValue > 0) {
         let PERCENTAGE_CHANGE = 1 - (moveY / SCROLL_LOWER_BOUND);
